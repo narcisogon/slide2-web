@@ -1,0 +1,61 @@
+<!-- booking.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Sunny Splash Waterpark</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2Dk7ucXlflrUxq+1iUfCQu6ndyh0Vz1mBdRzE1YxKXnQoQ+lR7s3ghsAFvF3jtk2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="container">
+            <h2>Book Your Visit</h2>
+            <div class="booking-form-container">
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="booking-name"><i class="fas fa-user"></i> Name:</label>
+                        <input type="text" id="booking-name" name="booking-name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-email"><i class="fas fa-envelope"></i> Email:</label>
+                        <input type="email" id="booking-email" name="booking-email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-date"><i class="fas fa-calendar-alt"></i> Date:</label>
+                        <input type="date" id="booking-date" name="booking-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ticket-type"><i class="fas fa-ticket-alt"></i> Ticket Type:</label>
+                        <select id="ticket-type" name="ticket-type" required>
+                            <option value="">Select</option>
+                            <option value="general">General Admission - $30</option>
+                            <option value="vip">VIP Pass - $50</option>
+                            <option value="season">Season Pass - $200</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests"><i class="fas fa-users"></i> Number of Guests:</label>
+                        <input type="number" id="guests" name="guests" min="1" max="20" placeholder="e.g., 4" required>
+                    </div>
+                    <button type="submit" class="btn"><i class="fas fa-book"></i> Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
